@@ -1,8 +1,6 @@
 package main.java.aoc.year2021;
 
 import java.io.IOException;
-import java.util.Arrays;
-
 import main.java.aoc.common.Day;
 
 public class Day1 extends Day {
@@ -29,8 +27,11 @@ public class Day1 extends Day {
         for(int i = 0; i < k; i++)
             currentSum += report[i];
         slices[0] = currentSum;
-
+        
         for(int i = 1; i < n - k + 1; i++) {
+            // move the window to the right: 
+            // add the new integer that falls into the window, 
+            // and subtract the old one that falls out of the window
             int tempSum = currentSum + report[i + k - 1] - report[i - 1];
             slices[i] = tempSum;
             currentSum = tempSum;

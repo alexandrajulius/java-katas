@@ -32,6 +32,6 @@ public class Day1Test {
     public void testTaskTwoWithReport() throws IOException {
         int[] report = Day1.fileToArray("bin/main/resources/year2021/day1.txt");
 
-        assertEquals(7, Day1.secondTask(report));
+        assertEquals(1158, Day1.secondTask(report));
     }
 }
