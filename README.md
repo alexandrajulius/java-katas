@@ -3,7 +3,7 @@
 
 ## 2021
 ### Days
-- todo
+- [Day 1](https://github.com/alexandrajulius/java-katas/blob/main/src/main/java/aoc/year2021/Day1.java)
 
 ## 2020
 ### Days
