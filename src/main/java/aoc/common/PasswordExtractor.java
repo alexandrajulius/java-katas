@@ -5,13 +5,6 @@ import java.io.IOException;
 
 public class PasswordExtractor 
 {
-    public static String[] getListOfStrings(String pathToFile) throws IOException
-    {
-        String stringFromFile = Day.fileToString(pathToFile);
-      
-        return stringFromFile.split(",");
-    }
-
     public static Password[] getPasswordList(String[] strArray) 
     {
         Password[] pwdList = new Password[strArray.length];

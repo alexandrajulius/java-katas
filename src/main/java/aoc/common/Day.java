@@ -19,6 +19,13 @@ public abstract class Day
         return intArray;
     }   
 
+    public static String[] getListOfStrings(String pathToFile) throws IOException
+    {
+        String stringFromFile = Day.fileToString(pathToFile);
+      
+        return stringFromFile.split(",");
+    }
+
     public static String fileToString(String filename) throws IOException
     {
         BufferedReader reader = new BufferedReader(new FileReader(filename));

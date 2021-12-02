@@ -3,6 +3,8 @@ package year2020;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.io.IOException;
 import org.junit.Test;
+
+import main.java.aoc.common.Day;
 import main.java.aoc.common.PasswordExtractor;
 import main.java.aoc.year2020.*;
 
@@ -21,8 +23,7 @@ public class Day2Test {
 
     @Test 
     public void testTaskOneWithReport() throws IOException {
-    
-        String[] stringList = PasswordExtractor.getListOfStrings("bin/main/resources/year2020/day2.txt");
+        String[] stringList = Day.getListOfStrings("bin/main/resources/year2020/day2.txt");
 
         assertEquals(546, Day2.firstTask(stringList));
     }
@@ -30,7 +31,7 @@ public class Day2Test {
     @Test 
     public void testTaskTwoWithReport() throws IOException {
     
-        String[] stringList = PasswordExtractor.getListOfStrings("bin/main/resources/year2020/day2.txt");
+        String[] stringList = Day.getListOfStrings("bin/main/resources/year2020/day2.txt");
 
         assertEquals(275, Day2.secondTask(stringList));
     }
