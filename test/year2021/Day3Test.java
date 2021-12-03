@@ -21,4 +21,18 @@ public class Day3Test {
         
         assertEquals(2595824, Day3.firstTask(stringList));
     }
+
+    @Test 
+    public void testTaskTwoWithDummyReport() throws IOException {
+        String[] report = {"00100","11110","10110","10111","10101","01111","00111","11100","10000","11001","00010","01010"};
+        
+        assertEquals(230, Day3.secondTask(report));
+    }
+
+    @Test 
+    public void testTaskTwoWithReport() throws IOException {
+        String[] stringList = Day.getListOfStrings("bin/main/resources/year2021/day3.txt");
+        
+        assertEquals(2135254, Day3.secondTask(stringList));
+    }
 }
