@@ -5,7 +5,7 @@ import main.java.aoc.common.Day;
 
 public class Day2 extends Day {
     public static void main(String[] args) {
-        System.out.println("Day1 is here.");
+        System.out.println("Day2 is here.");
     }
 
     public static int firstTask(String[] report) throws IOException {
@@ -13,8 +13,6 @@ public class Day2 extends Day {
         int depth = 0;
         for(int i = 0; i < report.length; i++) {
             String[] splitInstruction = report[i].split(" ");
-            // .equals("test") checks if both Strings have the same value //-> true
-            // == checks if they are the same object //-> false
             if (splitInstruction[0].equals("forward")) {
                 horizontal += Integer.parseInt(splitInstruction[1]);
             }
