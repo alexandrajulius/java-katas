@@ -19,9 +19,9 @@ public class Day3 extends Day {
                 countList[j] = countList[j] + String.valueOf(report[i].charAt(j));
             }
         }        
-        int zeros = 0;
-        int ones = 0;
         for (String line : countList) {
+            int zeros = 0;
+            int ones = 0;
             for (int i = 0; i < line.length(); i++) {
                 if (String.valueOf(line.charAt(i)).equals("0")) {
                     zeros++;
@@ -37,8 +37,6 @@ public class Day3 extends Day {
                 gamma = gamma.concat("1");
                 epsilon = epsilon.concat("0");
             }
-            zeros = 0;
-            ones = 0;
         }
         return Integer.parseInt(gamma.toString(), 2) * Integer.parseInt(epsilon.toString(), 2);
     }
